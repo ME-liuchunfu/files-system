@@ -16,24 +16,24 @@ files-system:
     # 阿里云对象存储配置信息
     aliyun:
       endpoint: oss-cn-shenzhen.aliyuncs.com
-      prefix: emall
+      prefix: files-system
       autoDate: true
-      accessKeyId: LTAI4Fi7k4ecC6nsW1rehY7D
-      accessKeySecret: F1JvGisb7vfLNwxX60jtBq9u4ThJmx
-      bucketName: spring-image
+      accessKeyId: xxx
+      accessKeySecret: xxx
+      bucketName: xxx
     # 腾讯对象存储配置信息
     # 请参考 https://cloud.tencent.com/document/product/436/6249
     tencent:
       secretId: AKIDOccMr856uoU1Tsa2MQL5aqseBUWRrb5i
       secretKey: XqtgEhIdrupTs4ygaWlkUUXv3w3FiwuD
-      prefix: emall
+      prefix: files-system
       autoDate: true
-      region: ap-shanghai
-      bucketName: vytech-1300096589
+      region: xxx
+      bucketName: xxx
     # 七牛云对象存储配置信息
     qiniu:
       endpoint: http://pd5cb6ulu.bkt.clouddn.com
-      prefix: emall
+      prefix: files-system
       autoDate: true
       accessKey: 111111
       secretKey: xxxxxx
@@ -42,7 +42,7 @@ files-system:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.103.144.95:3306/file-system?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    url: jdbc:mysql://localhost:3306/file-system?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
     username: root
     password: root123
   jpa:
